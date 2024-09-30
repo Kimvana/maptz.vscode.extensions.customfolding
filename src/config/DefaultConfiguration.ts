@@ -164,6 +164,12 @@ export let defaultConfiguration: IConfig.IConfiguration = {
     foldStart: "#region [NAME]",
     foldStartRegex: "[\\s]*#region[\\s]*(.*)"
   },
+  "[restructuredtext]": {                       //Language selector
+    foldEnd: ".. #endregion",
+    foldEndRegex: "^[\\s]*\\.\\.[\\s]*#endregion[\\s]*$",
+    foldStart: ".. #region [NAME]",
+    foldStartRegex: "^[\\s]*\\.\\.[\\s]*#region[\\s]*.*[\\s]*$",
+  },
   "[ruby]": {                                      //Language selector
     foldEnd: "#endregion",
     foldEndRegex: "[\\s]*#endregion",
